@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67127cc9-3b44-4965-97ff-90bced8dbe24" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/caller/v2/js/China_data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth_config.js" afterPath="$PROJECT_DIR$/config/auth_config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/savepath.js" afterPath="$PROJECT_DIR$/config/savepath.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/action/face.js" afterPath="$PROJECT_DIR$/modules/action/face.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/action/general.js" afterPath="$PROJECT_DIR$/modules/action/general.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/action/home.js" afterPath="$PROJECT_DIR$/modules/action/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/action/recognize.js" afterPath="$PROJECT_DIR$/modules/action/recognize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/models/base.js" afterPath="$PROJECT_DIR$/modules/models/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/models/basemodel.js" afterPath="$PROJECT_DIR$/modules/models/basemodel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/models/index.js" afterPath="$PROJECT_DIR$/modules/models/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/services/home.js" afterPath="$PROJECT_DIR$/modules/services/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/services/recognize.js" afterPath="$PROJECT_DIR$/modules/services/recognize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/caller/js/canvas.js" afterPath="$PROJECT_DIR$/static/caller/js/canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/caller/v2/css/style.css" afterPath="$PROJECT_DIR$/static/caller/v2/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/caller/v2/index.html" afterPath="$PROJECT_DIR$/static/caller/v2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/caller/v2/js/canvas.js" afterPath="$PROJECT_DIR$/static/caller/v2/js/canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/caller/v2/js/data_ctrl.js" afterPath="$PROJECT_DIR$/static/caller/v2/js/data_ctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/my_qrcode.js" afterPath="$PROJECT_DIR$/static/js/my_qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_index.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_previewer.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_previewer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_search.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_search_detail.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_search_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_search_result.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_search_result.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_video.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/pages/index_visitor.html" afterPath="$PROJECT_DIR$/static/v2/dist/pages/index_visitor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/static/css/style.css" afterPath="$PROJECT_DIR$/static/v2/dist/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/dist/static/js/app.js" afterPath="$PROJECT_DIR$/static/v2/dist/static/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/package.json" afterPath="$PROJECT_DIR$/static/v2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/app.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/app.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/earth.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/earth.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/gallery.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/gallery.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/gmarquee.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/gmarquee.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/visitor.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/visitor.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/wchina.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/wchina.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/components/wheader.vue" afterPath="$PROJECT_DIR$/static/v2/src/components/wheader.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/stores/earth.js" afterPath="$PROJECT_DIR$/static/v2/src/stores/earth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/stores/gallery.js" afterPath="$PROJECT_DIR$/static/v2/src/stores/gallery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/stores/plugins/websocketPlugins.js" afterPath="$PROJECT_DIR$/static/v2/src/stores/plugins/websocketPlugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2/src/stores/visitor.js" afterPath="$PROJECT_DIR$/static/v2/src/stores/visitor.js" />
+    </list>
+    <ignored path="fascom-recognition.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fascom-recognition" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/services/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2277">
+              <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/action/general.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1221">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/action/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3696">
+              <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="earth.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/v2/src/components/earth.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6105">
+              <caret line="185" column="59" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recognize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/services/recognize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/qrcode.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/database.js" />
+        <option value="module.js" />
+        <option value="$PROJECT_DIR$/modules/models/base.js" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_visitor.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_index.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_previewer.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_search.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_search_detail.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_search_result.html" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index_video.html" />
+        <option value="$PROJECT_DIR$/static/v2/src/components/app.vue" />
+        <option value="$PROJECT_DIR$/static/v2/dist/static/css/style.css" />
+        <option value="$PROJECT_DIR$/static/v2/src/components/wheader.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/static/caller/v2/Keyboard-master/js/jquery.keyboard.js" />
+        <option value="$PROJECT_DIR$/static/caller/v2/SoftKey/css/flat_gray/keyboard.css" />
+        <option value="$PROJECT_DIR$/static/caller/js/canvas.js" />
+        <option value="$PROJECT_DIR$/static/v2/dist/pages/index.html" />
+        <option value="$PROJECT_DIR$/static/v2/src/components/earth.vue" />
+        <option value="$PROJECT_DIR$/modules/action/face.js" />
+        <option value="$PROJECT_DIR$/modules/models/basemodel.js" />
+        <option value="$PROJECT_DIR$/static/caller/v2/js/China_data.js" />
+        <option value="$PROJECT_DIR$/static/v2/src/stores/visitor.js" />
+        <option value="$PROJECT_DIR$/static/v2/package.json" />
+        <option value="$PROJECT_DIR$/static/v2/webpack.config.js" />
+        <option value="$PROJECT_DIR$/modules/models/index.js" />
+        <option value="$PROJECT_DIR$/modules/services/recognize.js" />
+        <option value="$PROJECT_DIR$/static/caller/v2/js/canvas.js" />
+        <option value="$PROJECT_DIR$/static/caller/v2/css/style.css" />
+        <option value="$PROJECT_DIR$/static/caller/v2/index.html" />
+        <option value="$PROJECT_DIR$/static/v2/src/components/visitor.vue" />
+        <option value="$PROJECT_DIR$/static/caller/v2/js/data_ctrl.js" />
+        <option value="$PROJECT_DIR$/config/savepath.js" />
+        <option value="$PROJECT_DIR$/modules/action/general.js" />
+        <option value="$PROJECT_DIR$/modules/action/home.js" />
+        <option value="internal/module.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/static/js/my_qrcode.js" />
+        <option value="$PROJECT_DIR$/modules/services/home.js" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/test/testQrCode.js" />
+        <option value="$PROJECT_DIR$/config/server.js" />
+        <option value="$PROJECT_DIR$/modules/action/recognize.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fascom-recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="D:\node\node5.6\node" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.5.0" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="D:\node\node5.6\node.exe" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="setOption&#9;null&#9;null&#10;rgba&#9;null&#9;null&#10;chart&#9;null&#9;null&#10;w_earth&#9;null&#9;null&#10;w_search_result&#9;null&#9;null&#10;w_research_result&#9;null&#9;null&#10;inscription&#9;null&#9;null&#10;training&#9;null&#9;null&#10;saveInfo&#9;null&#9;null&#10;VirtualKeyboardIME&#9;null&#9;null&#10;city-pi&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\留影墙\fascom-recognition\fascom-recognition\static\caller\v2\js" />
+      <recent name="E:\留影墙\fascom-recognition\fascom-recognition\static\caller\v2\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\留影墙\fascom-recognition\fascom-recognition\static\caller\v2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.server.js">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="China_data.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="China_data.js" working-dir="$PROJECT_DIR$/static/caller/v2/js">
+      <method />
+    </configuration>
+    <configuration default="false" name="testQrCode.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="testQrCode.js" working-dir="$PROJECT_DIR$/test">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.China_data.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.testQrCode.js" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.testQrCode.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.China_data.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lenovo\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67127cc9-3b44-4965-97ff-90bced8dbe24" name="Default" comment="" />
+      <created>1532420577918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532420577918</updated>
+      <workItem from="1532420579621" duration="1874000" />
+      <workItem from="1532423074398" duration="1961000" />
+      <workItem from="1532480798455" duration="13076000" />
+      <workItem from="1532570326540" duration="4176000" />
+      <workItem from="1532588469894" duration="9011000" />
+      <workItem from="1532653819852" duration="3236000" />
+      <workItem from="1532657934713" duration="4192000" />
+      <workItem from="1532670379350" duration="8540000" />
+      <workItem from="1532913419580" duration="2376000" />
+      <workItem from="1532916521937" duration="10746000" />
+      <workItem from="1532999462054" duration="11637000" />
+      <workItem from="1533028396247" duration="2056000" />
+      <workItem from="1533030694932" duration="1564000" />
+      <workItem from="1533085677848" duration="22046000" />
+      <workItem from="1533171695547" duration="20144000" />
+      <workItem from="1533258802499" duration="14410000" />
+      <workItem from="1533284467400" duration="627000" />
+      <workItem from="1533517752089" duration="22887000" />
+      <workItem from="1533603822291" duration="21762000" />
+      <workItem from="1533690195459" duration="12733000" />
+      <workItem from="1533718274935" duration="2375000" />
+      <workItem from="1533776809386" duration="1861000" />
+      <workItem from="1533863019606" duration="6709000" />
+      <workItem from="1534122352554" duration="8004000" />
+      <workItem from="1534309454027" duration="2245000" />
+      <workItem from="1534381618232" duration="10274000" />
+      <workItem from="1534468154153" duration="18232000" />
+      <workItem from="1534729557951" duration="14785000" />
+      <workItem from="1534758264761" duration="592000" />
+      <workItem from="1534813729910" duration="7219000" />
+      <workItem from="1534900488969" duration="3229000" />
+      <workItem from="1534986837878" duration="4930000" />
+      <workItem from="1535598848614" duration="2344000" />
+      <workItem from="1535936180869" duration="1209000" />
+      <workItem from="1537322262844" duration="2301000" />
+      <workItem from="1537405552821" duration="591000" />
+      <workItem from="1537498835984" duration="106000" />
+      <workItem from="1539220600406" duration="1592000" />
+      <workItem from="1539225635954" duration="3614000" />
+      <workItem from="1539246144306" duration="843000" />
+      <workItem from="1539307096295" duration="1404000" />
+      <workItem from="1539315465964" duration="8992000" />
+      <workItem from="1539485054905" duration="16472000" />
+      <workItem from="1539565481673" duration="16241000" />
+      <workItem from="1539652227269" duration="7550000" />
+      <workItem from="1539661204197" duration="11426000" />
+      <workItem from="1539739239193" duration="10270000" />
+      <workItem from="1539824929186" duration="590000" />
+      <workItem from="1539851087313" duration="986000" />
+      <workItem from="1539912014956" duration="692000" />
+      <workItem from="1540171246757" duration="2992000" />
+      <workItem from="1540775674449" duration="2191000" />
+      <workItem from="1540862229028" duration="593000" />
+      <workItem from="1540905998620" duration="1473000" />
+      <workItem from="1540949206156" duration="1418000" />
+      <workItem from="1541149614170" duration="1001000" />
+      <workItem from="1541210223117" duration="8444000" />
+      <workItem from="1541380970485" duration="10041000" />
+      <workItem from="1541501280219" duration="384000" />
+      <workItem from="1541568992376" duration="1332000" />
+      <workItem from="1541655965751" duration="2904000" />
+      <workItem from="1541990656479" duration="460000" />
+      <workItem from="1541992498722" duration="1940000" />
+      <workItem from="1542173789975" duration="414000" />
+      <workItem from="1542965691057" duration="1625000" />
+      <workItem from="1543194518708" duration="12598000" />
+      <workItem from="1543221068511" duration="5242000" />
+      <workItem from="1543281402575" duration="14229000" />
+      <workItem from="1543457570463" duration="2556000" />
+      <workItem from="1548475112829" duration="948000" />
+      <workItem from="1564016282208" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="429533000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20243773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28819445" sideWeight="0.50397456" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27662036" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28422275" sideWeight="0.49602544" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5823666" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39791185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>22</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modules/action/general.js</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/my_qrcode.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/models/basemodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/recognize/0b8d78a1-de19-42d2-8686-a7b5c2305ff5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/caller/v2/js/caller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/megvii.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/caller/v2/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16269">
+          <caret line="493" column="18" selection-start-line="493" selection-start-column="18" selection-end-line="493" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/caller/v2/js/canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="88" column="45" selection-start-line="87" selection-start-column="4" selection-end-line="88" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/src/components/app.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/webpack.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/dist/pages/index_visitor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3602">
+          <caret line="940" column="7" selection-start-line="940" selection-start-column="7" selection-end-line="940" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/src/components/visitor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3109">
+          <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/caller/v2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lib/foscam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/action/face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="223" column="31" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lib/megvii.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3168">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/60.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/55.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qr-image/lib/qr-base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1353">
+          <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qr-image/lib/qr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/6.5.0/core-modules/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="919" column="0" selection-start-line="919" selection-start-column="0" selection-end-line="919" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/recognize/53/2f76edd2-f4ff-4dcf-ae98-6a17d0df7ec8.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/recognize/79/d1a237e6-eae1-4915-8389-c174bc619cae.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/recognize/53/DSC_1620.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5940">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/54.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/savepath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/79.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/519.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js" />
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/1.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/519_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testQrCode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/services/recognize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/qrcode/53.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/dist/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1640">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2/src/components/earth.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6105">
+          <caret line="185" column="59" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/action/recognize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5478">
+          <caret line="64" column="13" selection-start-line="62" selection-start-column="11" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/caller/v2/js/data_ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6827">
+          <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/my_qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/services/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2277">
+          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/action/general.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1221">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/action/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3696">
+          <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

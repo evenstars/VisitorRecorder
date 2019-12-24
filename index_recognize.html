@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/jQuery-3.1.0.js"></script>
+    <script type="text/javascript" src="./js/char.js"></script>
+    <script type="text/javascript" src="./js/jquery.liMarquee.js"></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="g_bar"></div>
+        <div class="g_bottombar"></div>
+        <div class="g_scale">
+            <b></b>
+        </div>
+
+        <div id="photowall" class="g_gallery">
+            <div class="wrapper">
+                <div class="g1">
+                    <ul>
+                        <li v-for="file0 in file[0]" track-by="$index">
+                            <img v-bind:src="file0" >
+                        <li>
+                    </ul>
+                </div>
+                <div class="g2">
+                    <ul>
+                        <li v-for="file1 in file[1]" track-by="$index">
+                            <img v-bind:src="file1">
+                        <li>
+                    </ul>
+                </div>
+                <div class="g3">
+                    <ul>
+                        <li v-for="file2 in file[2]" track-by="$index">
+                            <img v-bind:src="file2">
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="g_home">
+            <a href="javascript:void(0)" class="showvideo"></a>
+            <a href="javascript:void(0)" class="showsearch"></a>
+            <a href="javascript:void(0)" class="showhome"></a>
+        </div>
+
+        
+    <div class="g_earth" data-screen="">
+        <div class="ring">
+            
+        </div>
+        <div class="track">
+            <div class="satellite"></div>
+            <div class="ball"></div>
+        </div>
+        <div class="earth">
+            <div class="china">
+                <div class="citys">
+                    <div class="city hefei">
+                        合肥<span class="num">123</span>
+                    </div>
+                    <div class="city beijing">
+                        北京<span class="num">10</span>
+                    </div>
+                    <div class="city shanghai">
+                        上海<span class="num">2333</span>
+                    </div>
+                    <div class="city nanjing">
+                        南京<span class="num">66666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="camera" class="g_camera" data-screen="">
+        <div class="r1">
+            <div class="a">
+                
+            </div>
+        </div>
+        <div class="r2">
+            
+        </div>
+        <div class="take">
+            <div class="camera">
+                <img src="{{img}}" style="width: 100%;height: 100%;display: block;">
+            </div>
+            <div class="button">
+                <div class="r">
+                    <div class="a">
+                        
+                    </div>
+                </div>
+                <a href="javascript:void(0)" v-on:click="camera" class="btn">
+                    <b class="icon_camera"></b>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="g_area fn-hide" data-screen="">
+        <a class="point" style="top: 102px;left: 221px;">
+            <div class="name">
+                北美洲
+            </div>
+            <div class="num">
+                68
+            </div>
+        </a>
+
+        <a class="point" style="top: 401px; left: 404px; ">
+            <div class="name">
+                南美洲
+            </div>
+            <div class="num">
+                18
+            </div>
+        </a>
+
+        <a class="point" style="top: 306px; left: 722px; ">
+            <div class="name">
+                非洲
+            </div>
+            <div class="num">
+                1
+            </div>
+        </a>
+
+        <a class="point" style="top: 86px; left: 801px;">
+            <div class="name">
+                欧洲
+            </div>
+            <div class="num">
+                34
+            </div>
+        </a>
+
+        <a class="point" style="top: 150px; left: 1037px;">
+            <div class="name">
+                亚洲
+            </div>
+            <div class="num">
+                1884
+            </div>
+        </a>
+
+        <a class="point" style="top: 438px; left: 1178px;">
+            <div class="name">
+                大洋洲
+            </div>
+            <div class="num">
+                569
+            </div>
+        </a>
+    </div>
+
+    <div id="search" class="g_search fn-hide" data-screen="">
+        <div class="box">        
+            <div class="form">
+                <form>
+                    <label class="w_label blue">
+                        <div class="ball">
+                            N
+                        </div>
+                        <div class="flex">
+                            <input name="search_name" v-model="search_name" placeholder="请输入姓名">
+                        </div>
+                    </label>
+
+                    <label class="w_label blue">
+                        <div class="ball">
+                            D
+                        </div>
+                        <div class="flex">
+                            <input name="search_address" v-model="search_address" placeholder="请输入单位">
+                        </div>
+                    </label>
+                    
+
+                    <button v-on:click="search" type="button" class="w_submit">搜 索</button>
+                </form>
+            </div>
+            <div class="result">
+                <div class="loading">
+                    <div class="ra1">
+                        
+                    </div>
+                    <div class="ra2">
+                        
+                    </div>
+                    <div class="tips">
+                        输入检索条件
+                    </div>
+                </div>
+
+                <div class="list fn-hide">
+                    <div class="t">
+                        检索结果
+                    </div>            
+                    <ul>
+                        <li v-for="Model in persons">
+                            <a href="#">
+                            <img src="{{Model.imagePath}}" class="avatar">
+                            <div>
+                                <div class="name">
+                                    {{Model.name}}
+                                </div>
+                                <div class="unit">
+                                    {{Model.address}}
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="close"></a>
+    </div>
+
+    <div class="g_video fn-hide" data-screen="">
+        <div class="video">
+            <video id="video" class="vjs-tech" preload="auto" poster="http://vjs.zencdn.net/v/oceans.png">
+                <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank" class="vjs-hidden" hidden="hidden">supports HTML5 video</a></p>
+            </video>
+        </div>
+        <a href="javascript:void(0)" class="close"></a>
+    </div>
+
+    <div class="g_search_tl fn-hide">
+        <div class="box">        
+            <div class="people">
+                <img src="./images/p7.png" class="avatar">
+                <div>
+                    <div class="name">
+                        Ron Lee
+                    </div>
+                    <div class="unit">
+                        合肥工业大学教授
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p">
+                            <img src="./images/p1.png">
+                        </div>
+                        <div class="time">
+                            2016年05月23日
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="close"></a>
+    </div>
+
+
+        <div class="g_info">
+            <dl class="weather">
+                <dt>
+                    <b class="icon_sun"></b><span>天气状况</span>
+                </dt>
+                <dd>
+                    <div class="degree">--</div>
+                    <div class="">
+                        <div class="flag">
+                            ℃
+                        </div>
+                        <div class="wtype">
+                            --
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="date">
+                <dt>
+                    <b class="icon_calendar"></b><span>日期</span>
+                </dt>
+                <dd>
+                    <div class="ri">
+                        00
+                    </div>
+                    <div>
+                        <div class="nian">
+                            2016
+                        </div>
+                        <div>
+                            <span class="yue">00</span><span class="yue_unit">月</span>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="time">
+                <dt>
+                    <b class="icon_time"></b><span>时间</span>
+                </dt>
+                <dd>
+                    <div class="hour">00:00</div>
+                    <div class="second">
+                        00
+                    </div>
+                </dd>
+            </dl>
+            <dl class="guests">
+                <dt>
+                    <b class="icon_guest"></b><span>到访人员</span>
+                </dt>
+                <dd>
+                    16,789
+                </dd>
+            </dl>
+        </div>
+
+        <div class="g_canvas">
+            <canvas id="bar"></canvas>
+            <canvas id="line"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript">
+    // 输入框
+    (function() {
+        $('.row input').on('focus', function(e) {
+            var target = $(e.target);
+
+            target.closest('label').removeClass('blue').addClass('yellow');
+        });
+
+        $('.row input').on('blur', function(e) {
+            var target = $(e.target);
+
+            target.closest('label').removeClass('yellow').addClass('blue');
+        });
+
+        $('.w_label input').on('focus', function(e) {
+            var target = $(e.target);
+
+            target.closest('label').removeClass('blue').addClass('yellow');
+        });
+
+        $('.w_label input').on('blur', function(e) {
+            var target = $(e.target);
+
+            target.closest('label').removeClass('yellow').addClass('blue');
+        });
+    })();
+    // 柱状图
+    (function() {
+        var data = [],
+            barsCount = 100,
+            labels = new Array(barsCount),
+            updateDelayMax = 1000,
+            random = function(max){ return Math.round(Math.random()*100)};
+            
+        for (var i = barsCount - 1; i >= 0; i--) {
+            data.push(Math.round(Math.random() * 70) + 30);
+        };
+
+        var render = {
+            labels: labels,
+            datasets: [
+                {
+                    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                    borderWidth: 1,
+                    data: data,
+                }
+            ]
+        };
+
+        var myBarChart = new Chart(document.getElementById('bar').getContext('2d'), {
+            type: 'bar',
+            data: render,
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: false
+                    }]
+                },
+                tooltips: {
+                    enabled: false
+                },
+                height: 300,
+                maintainAspectRatio: false,
+                animation: {
+                    onComplete: function() {
+                        // Get scope of the hero chart during updates
+                        var timeout;
+                        // Stop this running every time the update is fired
+                        this.options.onAnimationComplete = randomUpdate;
+
+                        this.options.animationEasing = 'easeOutQuint';
+
+                        randomUpdate();
+
+                        function randomUpdate(){
+                            // myBarChart.stop();
+                            clearTimeout(timeout);
+                            // Get a random bar
+                            timeout = setTimeout(function(){
+                                var randomNumberOfBars = Math.floor(Math.random() * barsCount),
+                                        i;
+                                for (i = randomNumberOfBars - 1; i >= 0; i--) {
+                                    myBarChart.data.datasets[0].data[Math.floor(Math.random() * barsCount)] = Math.round(Math.random() * 100);
+                                };
+
+                                myBarChart.update();
+                            }, (Math.random() + 1) * updateDelayMax);
+                        };
+                    }
+                }
+            }
+        });
+    })();
+    // 线图
+    (function() {
+        var data = [],
+            barsCount = 18,
+            labels = new Array(barsCount),
+            updateDelayMax = 1000,
+            random = function(max){ return Math.round(Math.random()*100)};
+            
+        for (var i = barsCount - 1; i >= 0; i--) {
+            data.push(Math.round(Math.random() * 80) + 20);
+        };
+
+        var ctx = document.getElementById('line').getContext('2d');
+        var gradient = ctx.createLinearGradient(0, 0, 0, 300);
+
+        gradient.addColorStop(0, "rgba(246, 197, 80, 0.7)");
+        gradient.addColorStop(0.5, "rgba(114, 203, 207, 0.7)");
+        gradient.addColorStop(1, "rgba(66, 204, 253, 0.7)");
+
+        var render = {
+            labels: labels,
+            datasets: [
+                {
+                    backgroundColor: gradient,
+                    borderWidth: 1,
+                    data: data,
+                    borderWidth: 4,
+                    pointBackgroundColor: '#ffc547',
+                    pointBorderWidth: 4,
+                    pointBorderColor: 'white',
+                    pointRadius: 6
+                }
+            ]
+        };
+
+
+
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: render,
+            options: {
+                paddingTop: 30,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: false
+                    }]
+                },
+                tooltips: {
+                    enabled: false
+                },
+                height: 300,
+                maintainAspectRatio: false,
+                animation: {
+                    onComplete: function() {
+                        // Get scope of the hero chart during updates
+                        var timeout;
+                        // Stop this running every time the update is fired
+                        this.options.onAnimationComplete = randomUpdate;
+
+                        this.options.animationEasing = 'easeOutQuint';
+
+                        randomUpdate();
+
+                        function randomUpdate(){
+                            // myBarChart.stop();
+                            clearTimeout(timeout);
+                            // Get a random bar
+                            timeout = setTimeout(function(){
+                                var randomNumberOfBars = Math.floor(Math.random() * barsCount),
+                                        i;
+                                for (i = randomNumberOfBars - 1; i >= 0; i--) {
+                                    myLineChart.data.datasets[0].data[Math.floor(Math.random() * barsCount)] = Math.round(Math.random() * 100);
+                                };
+
+                                myLineChart.update();
+                            }, (Math.random() + 1) * updateDelayMax);
+                        };
+                    }
+                }
+            }
+        });
+    })();
+
+    // 时间计算
+    (function() {
+        setInterval(function() {
+            var now = new Date();
+
+            var year = now.getFullYear();
+            var month = now.getMonth()+1;
+            if(month < 10) {
+                month = '0' + month;
+            }
+            var date = now.getDate();
+            if(date < 10) {
+                date = '0' + date;
+            }
+            var hour = now.getHours();
+            if(hour < 10) {
+                hour = '0' + hour;
+            }
+            var minute = now.getMinutes();
+            if(minute < 10) {
+                minute = '0' + minute;
+            }
+            var second = now.getSeconds();
+            if(second < 10) {
+                second = '0' + second;
+            }
+
+            $('.date .nian').text(year);
+            $('.date .ri').text(date);
+            $('.date .yue').text(month);
+            $('.time .hour').text([hour, minute].join(':'));
+            $('.time .second').text(second);
+
+        }, 1000);
+    })();
+    // 生成天气
+    (function() {
+        // 合肥天气
+        var url = 'http://php.weather.sina.com.cn/js.php?city=%E5%90%88%E8%82%A5';
+        var query = function() {
+            $.ajax({
+                url: 'http://wthrcdn.etouch.cn/weather_mini?city=%E5%90%88%E8%82%A5',
+                dataType: 'json'
+            }).then(function(data) {
+                if(data.status == 1000) {
+                    $('.weather .degree').text(data.data.wendu);
+                    $('.weather .wtype').text(data.data.forecast[0].type);
+                }
+            });
+        };
+
+        query();
+    })();
+    // 拖拽
+    (function() {
+        var status = {
+            start: false,
+            x: 0,
+            y: 0,
+            pick: null,
+            moveto: null,
+            placeholder: null
+        };
+
+        var pauseScroll = function() {
+            $('.g_gallery .g1').liMarquee('pause');
+            $('.g_gallery .g2').liMarquee('pause');
+            $('.g_gallery .g3').liMarquee('pause');
+        };
+
+        var playScroll = function() {
+            $('.g_gallery .g1').liMarquee('play');
+            $('.g_gallery .g2').liMarquee('play');
+            $('.g_gallery .g3').liMarquee('play');
+        };
+
+        var collectAllPosition = function() {
+            var all = [];
+
+            $('.g_gallery li').each(function(key, el) {
+                el = $(el);
+
+                var offset = el.offset();
+
+                offset.width = el.outerWidth();
+                offset.height = el.outerHeight();
+                offset.el = el;
+
+                all.push(offset);
+            });
+
+            return all;
+        };
+
+        $('.g_gallery li').on('mousedown', function(e) {
+            pauseScroll();
+
+            var all = collectAllPosition();
+            var galleryWidth = $('.g_gallery').outerWidth();
+            var galleryHeight = $('.g_gallery').outerHeight();
+
+            var target = $(e.currentTarget);
+            var offset = target.offset();
+            var height = target.outerHeight();
+            var width = target.outerWidth();
+
+            var dragel = target.clone();
+
+            status.pick = target;
+
+            dragel.css({
+                top: offset.top,
+                left: offset.left,
+                height: height,
+                width: width,
+                position: 'absolute',
+                zIndex: 11
+            });
+            dragel.addClass('draging');
+            $('.g_gallery').append(dragel);
+
+            var placeholder = target.clone();
+            placeholder.css({
+                height: height,
+                width: '100%',
+                opacity: 0
+            });
+
+            status.placeholder = placeholder;
+
+            status.x = e.pageX;
+            status.y = e.pageY;
+            status.start = true;
+
+            target.addClass('draged');
+
+            $(document.body).on('mousemove.drag', function(e) {
+                var move = {
+                    x: e.pageX,
+                    y: e.pageY
+                };
+
+                var diff = {
+                    x: move.x - status.x,
+                    y: move.y - status.y
+                };
+
+                var after = {
+                    left: offset.left + diff.x,
+                    top: offset.top + diff.y
+                }
+
+                if(after.left < 0) {
+                    after.left = 0;
+                }
+
+                if(after.top < 0) {
+                    after.top = 0;
+                }
+
+                if((after.left + width) > galleryWidth) {
+                    after.left = galleryWidth - width;
+                }
+
+                if((after.top + height) > galleryHeight) {
+                    after.top = galleryHeight - height;
+                }
+
+                dragel.css(after);
+
+                var center = {
+                    x: after.left + width/2,
+                    y: after.top + height/2
+                };
+
+                for(var i = 0, max = all.length; i < max; i++) {
+                    var item = all[i];
+
+                    if(center.x > item.left & center.x < (item.left + item.width)) { // x范围内
+                        if(center.y > item.top & center.y < (item.top + item.height)) { // x范围内
+
+                            if(status.el == status.pick) {
+                                status.moveto = null;
+                                status.placeholder.remove();
+                            } else {
+                                status.moveto = item.el;
+                                item.el.before(status.placeholder);
+                            }
+                            break;
+                        }
+                    }
+                }
+
+                return false;
+            });
+
+            $(document.body).on('mouseup.drag', function() {
+                dragel.remove();
+                status.placeholder.remove();
+                if(status.moveto) {
+                    status.moveto.before(status.pick);
+                }
+                status.pick.removeClass('draged');
+                playScroll();
+
+                $(document.body).off('mousemove.drag');
+                $(document.body).off('mouseup.drag');
+            });
+
+            return false;
+        });
+    })();
+    </script>
+</body>
+    <script type="text/javascript" src='./js/util.js'></script>
+    <script type="text/javascript" src='./js/vue.js'></script>
+    <script type="text/javascript" src='./js/buttons.js'></script>
+</html>

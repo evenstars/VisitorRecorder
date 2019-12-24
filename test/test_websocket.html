@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>websocket_test</title>
+</head>
+<body>
+
+</body>
+    <script type="text/javascript">
+
+        var websocket = null;
+        var option = {
+            port: 8181,
+            host: '127.0.0.1'
+        };
+        //判断当前浏览器是否支持WebSocket
+        if ('WebSocket' in window) {
+            var uri = `ws://${option.host}:${option.port}`;
+            websocket = new WebSocket(uri);
+        }
+        else {
+            alert('当前浏览器 Not support websocket')
+        }
+
+        //连接发生错误的回调方法
+        websocket.onerror = function () {
+            console.log("WebSocket连接发生错误");
+        };
+
+        //连接成功建立的回调方法
+        websocket.onopen = function () {
+            console.log('start');
+            var message = {
+                type:'register',
+                data: {
+                    from: 'small'
+                }
+            };
+            websocket.send(JSON.stringify(message));
+            console.log("WebSocket连接成功");
+        }
+        var recognize = {
+            type: 'recognize'
+        }
+        
+        websocket.send(JSON.stringify(recognize));
+        websocket.onmessage = function (event) {
+            console.log(event.data);
+
+        }
+
+        //连接关闭的回调方法
+        websocket.onclose = function () {
+            console.log("WebSocket连接关闭");
+        }
+
+    </script>
+</html>

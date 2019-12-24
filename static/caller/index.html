@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>手机端拍照</title>
+    <link rel="stylesheet" href="css/zzsc.css"> 
+    <link rel="stylesheet" href="css/caller-page.css">
+</head>
+
+<body>
+    <div id="container" class="container" >
+        <div id="canvas" class="canvas" style="display: none;">
+            <div class="title">
+                请签名
+            </div>
+            <div class="canvasbox">
+                <canvas class="myCanvas" id="myCanvas"></canvas>
+            </div>
+            <div class="form">
+                <button v-on:click="training" type="button" class="submit">信息录入</button>
+            </div>
+        </div>
+        <div id="g_camera" class="g_camera" data-screen="">
+            <div class="loading" style="display: none;">
+                <div class="l">
+                    <div class="ra1">
+                        
+                    </div>
+                    <div class="ra2">
+                        
+                    </div>
+                    <div class="tips">
+                        识别中
+                    </div>
+                </div>
+
+                <div class="tips_error">
+                    
+                </div>
+                <div class="tips_success">
+                    
+                </div>
+                <div class="tips_w">
+                    
+                </div>
+            </div>
+             <div class="finding">
+                <div class="l">
+                    <div class="ra1">
+                        
+                    </div>
+                    <div class="ra2">
+                        
+                    </div>
+                    <div class="tips">
+                        查询中
+                    </div>
+                </div>
+            </div>
+
+            <div class="training" style="display: none;" >
+                <div class="title">
+                    欢迎您首次到访  请录入您的信息
+                </div>
+                <ul class="clearfix ">
+                    <li>
+                        <img v-bind:src="img1">
+                    </li>
+<!--                     <li>
+    <img v-bind:src="img2">
+</li>
+<li>
+    <img v-bind:src="img3">
+</li>
+<li>
+    <img v-bind:src="img4">
+</li> -->
+                </ul>
+
+                <div class="form">
+                    <form>
+                        <div class="row"><!-- 
+                            <label class="blue">
+                                <b class="ball">N</b>
+                                <input  name="name" v-model="name" placeholder="请输入姓名">                    
+                            </label> -->
+
+                            <label class="blue j_select">
+                                <b class="ball">A</b>
+                                <div class="show">
+                                    请选择
+                                </div>
+                                <select v-model="selected">
+                                    <!-- <option value="-1">请选择</option> -->
+                                    <option v-for="option in options" v-bind:value="option.value">{{option.description}}</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="blue">
+                                <b class="ball">D</b>
+                                <input name="address" v-model="address" placeholder="请输入单位">
+                            </label>
+                        </div>
+                        <button v-on:click="showSignature" type="button" class="submit">信息录入</button>
+                        <!-- <div class="train-tip success-tip">
+                        </div>
+                        <div class="train-tip error-tip">
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="app">
+            <div  class="app-camera" v-on:click="send">
+                <div class="flash">
+                </div>
+                <div class="camera">
+                </div>
+                <div class="lense">
+                </div>
+                <div class="reflection">
+                </div>
+                <div class="reflection-small">
+                </div>
+            </div>
+            <p class="app-title">请点击相机拍照</p>
+        </div>
+
+        <div class="w_alert" style="display: none;">
+            <div class="box">
+                <div class="msg">
+                {{warning}}
+                </div>
+                <a href="javascript:void(0)" class="btn">
+                    确定                
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="countdown"></div>
+
+    <div style="text-align:center;clear:both"><br>
+    
+    <script type="text/javascript" src='js/util.js'></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src='js/vue.js'></script>
+    <script type="text/javascript" src='js/option.js'></script>
+    <script type="text/javascript" src="js/caller.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+
+    <script type="text/javascript" src="js/photo.js"></script>
+
+    <script type="text/javascript">
+
+    (function() {
+        $('.j_select select').on('change', function(e) {
+            var value = $(this).val();
+            var text = this.options[this.selectedIndex].text;
+            var show = $(this).closest('.j_select').find('.show');
+
+            if(value == -1) {
+                show.removeClass('active');
+            } else {
+                show.addClass('active');
+            }
+
+            show.text(text);
+        });
+    })(); 
+
+    </script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清华大学合肥公共安全研究院</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/timeline.css">
+	<link rel="stylesheet" href="./css/sm.min.css">
+
+	<link rel="stylesheet"  href="./SoftKey/css/flat_gray/keyboard.css">
+	<!--<link rel="stylesheet" href="./Keyboard-master/docs/css/jquery-ui.min.css">-->
+    <!--<link rel="stylesheet" href="./Keyboard-master/docs/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="./Keyboard-master/css/keyboard.css">-->
+    <!--<link rel="stylesheet" href="./Keyboard-master/css/keyboard-previewkeyset.css">-->
+	<!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div id="container" class="bg">
+        <div class="audios-box">
+            <audio class="audio-snap" src="audio/snap.wav" preload="auto"></audio>
+            <audio class="audio-train" src="audio/train.wav" preload="auto"></audio>
+            <audio class="audio-visit" src="audio/visit.wav" preload="auto"></audio>
+        </div>
+		<!-- panel 1 -->
+		<div class="panel1">
+			<div class="countdown"></div>
+			<div v-on:click="send">
+				<div class="welcome_tips">
+					<p>欢迎莅临清华大学合肥公共安全研究院</p>
+				</div>
+				<div class="camera">
+					<img src="img/camera.png" alt="">
+				</div>
+				<div class="circle1">
+					<img src="img/circle1.png" alt="">
+				</div>
+				<div class="circle2">
+					<img src="img/circle2.png" alt="">
+					<img id="loading" src="img/loading.png" alt="">
+				</div>
+				<div class="circle3">
+					<img src="img/circle3.png" alt="">
+				</div> 
+				<div class="tip">
+					<p>请您点击拍照按钮留影</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- panel 2 -->
+		<div class="panel2">
+			<div class="large_img"  >
+				<div class="big_smile">
+					<img style="height:456px;width: 810px;" v-bind:src="small_img" alt="">
+				</div>
+			</div>
+			<div class="visit_time">
+				欢迎您第{{visit_time}}次到访
+			</div>
+			<div class="avatar">
+				<div class="info">
+					<div class="name" id="name_input">{{avatar_name}}</div>
+					<img id="name_signature" v-bind:src="avatar_name" />
+					<p id="inscription_display">{{inscriptionFromKeyboard}}</p>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- panel 3 -->
+		<div class="panel3">
+			<!--重新签名-->
+			<div class="canvas2">
+	            <canvas class="myCanvas" id="myCanvas3" draggable="false" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;" onselect="document.selection.empty();"></canvas>
+	        </div>
+			<div class="smile2" id="small_pic">
+				<img id="inscription_image" style="height: 132px;width: 233px" v-bind:src="big_img" alt="">
+			</div>
+			<!--<div class="QR_code">-->
+				<!--<img v-bind:src="qrcode" alt="">-->
+			<!--</div>-->
+			<div v-on:click="resign" class="resign">
+				<a id="resign-a">更新签名</a>
+			</div>
+			<div v-on:click="inscription" class="inscription" id="inscription_button">
+				<a id="inscription-a">提交题词</a>
+			</div>
+			<div v-on:click="BACK" class="BACK">
+				<a>返回</a>
+			</div>
+			<img id = "inscription_show" v-bind:src="hand_inscription" />
+		</div>
+		
+		<!-- panel 4 -->
+		<div class="panel4">			
+			<div class="large_img" >
+				<div class="big_smile">
+					<img style="height:456px;width: 810px;" v-bind:src="big_img" alt="">
+				</div>
+			</div>
+			<div class="welcome">
+				<p>欢迎您首次到访</p>
+			</div>
+			<div class="small_rect">
+				<img src="img/small_rect.png" alt="">
+			</div>
+			<div class="sign_select">
+				<p>①请选择您所在城市信息</p>
+				<p>②请您在手写板上签名，在题词区题词</p>
+			</div>
+
+            <div id="country" class="dropdown">
+                <button id="choose_country" style="color: #e4f5f5;background: transparent;border-color: #02bbfc;border-radius: 5px;border-width: 2px;width:400px" class="area_btn btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {{chosen_country}}
+                    <span class="caret"></span>
+                </button>
+                <ul  id='country_list' style="width: 400px;background-color: rgba(231, 231, 231, 1);" class="dropdown-menu area_scroll" aria-labelledby="dropdownMenu1">
+                    <li v-for="country in countries" v-on:click="ensure_country($event)"><a href="#">{{country}}</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown" style="position: absolute;left: 1170px;top:370px;width:200px;">
+                <button id='choose_province'  style="color: #e4f5f5;width: 195px;background: transparent;border-color: #02bbfc;border-radius: 5px;border-width: 2px;" class="area_btn btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					{{chosen_province}}
+                    <span class="caret"></span>
+                </button>
+                <ul id="province_list" style="background-color: rgba(231, 231, 231, 1);width: 195px;" class="dropdown-menu area_scroll" aria-labelledby="dropdownMenu1">
+                    <li v-for="province in provinces" v-on:click="ensure_province($event)"><a href="#"  >{{province["provinceName"]}}</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown" style="position: absolute;left: 1375px;top:370px;width:200px;">
+                <button id="choose_city" disabled="true" style="color: #e4f5f5;background: transparent;border-color: #02bbfc;border-radius: 5px;border-width: 2px;width:195px;" class="area_btn btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					{{chosen_city}}
+                    <span class="caret"></span>
+                </button>
+                <ul id="city_list" style="background-color: rgba(231, 231, 231, 1);width: 195px" class="dropdown-menu area_scroll" aria-labelledby="dropdownMenu1">
+                    <li v-for="city in cities" v-on:click="ensure_city($event)"><a href="#">{{city['citysName']}}</a></li>
+                </ul>
+            </div>
+
+			<div class="save_info" v-on:click="saveInfo">
+				<a href="javascript:void(0)">保存信息</a>
+			</div>
+			<div class="re_photo" v-on:click="rePhoto">
+				<a STYLE="left:0px;top:10px;font-size: 15px;padding-left: 10px" href="javascript:void(0)">重新拍照</a>
+			</div>
+
+			<!--签名-->
+			<div class="canvas1">
+	            <canvas class="myCanvas" id="myCanvas2" draggable="false" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;" onselect="document.selection.empty();"></canvas>
+				<div class="canvas-word">签名区</div>
+	        </div>
+		</div>
+
+		<button class="hand_write" id="input_change" style="display:none">切换键盘</button>
+		<!--题词-->
+		<div class="canvas" style="display: none" id="inscription_area" >
+			<canvas style="display: inline;height:230px;width: 1319px;" class="myCanvas" id="myCanvas1" draggable="false" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;" onselect="document.selection.empty();"></canvas>
+			<input type="text" onfocus="keyboard_input()" onblur="VirtualKeyboard.toggle('tex_Search','softkey')"  style="display: none;height:140px;background: black;width:1319px;"  id="txt_Search"  class = "keyboard_inputarea" />
+			<div id="softkey" style="position:relative;left:17%"></div>
+			<div class="canvas-word" style="left: 20px;z-index: 310" id="inscription_hint">请您手写输入题词</div>
+		</div>
+
+		<!-- panel5 -->
+		<!-- 提示框-->
+		<div id="save_success" class="alert alert-success hint" role="alert">成功保存</div>
+		<div id="signature_err" class="alert alert-danger hint" role="alert">请您签名</div>
+		<div id="inscription_err" class="alert alert-danger hint" role="alert">请您输入题词</div>
+		<div id="train_err" class="alert alert-danger hint" role="alert" style="width: 20%;left: 40%;">训练失败,请重新拍照</div>
+		<div id="area_err" class="alert alert-danger hint" role="alert">请您选择地区</div>
+		<div id="signature_empty" class="alert alert-danger hint" role="alert">请勿提交空签名</div>
+		<div id="inscription_empty" class="alert alert-danger hint" role="alert">请勿提交空题词</div>
+		<div id="save_inscription_success" class="alert alert-success hint" role="alert">成功更新题词</div>
+		<div id="save_signature_success" class="alert alert-success hint" role="alert">成功更新签名</div>
+
+    <script src="./SoftKey/jquery-1.8.2.min.js"></script>
+    <!--<script src="./js/jquery.js"></script>-->
+	<script src='./js/util.js'></script>
+	<script src='./js/vue.js'></script>
+	<script src="./js/caller.js"></script>
+	<script src="./js/data_ctrl.js"></script>
+	<script src="./js/canvas.js"></script>
+	<script src="./SoftKey/vk_loader.js?vk_layout=CN%20Chinese%20Simpl.%20Pinyin&amp;vk_skin=flat_gray"></script>
+	<script src="./SoftKey/extensions/scriptqueue.js"></script>
+	<script src="./SoftKey/extensions/e.js"></script>
+	<script src="./SoftKey/virtualkeyboard.js"></script>
+    <script src="./SoftKey/virtualkeyboard.full.js"></script>
+	<script src="./SoftKey/layouts/layouts.js"></script>
+	<script src="./SoftKey/layouts/d/CN.js"></script>
+	<script src="./SoftKey/layouts/chinese-pynsimpl.js"></script>
+	<script>
+		function keyboard_input(){
+			VirtualKeyboard.toggle('txt_Search','softkey');
+            $("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+		}
+	   $("#input_change").click(function () {
+		   var display_label = ["切换键盘","切换手写"];
+		   var inscription_hint=["请您手写输入题词","请您点击此输入框，使用键盘输入题词"];
+		   if($("#input_change").text() == display_label[0]){
+			   $('.BACK').css('top','869px');
+			   $("#input_change").css('top','869px');
+			   $('.save_info').css('top','869px');
+		   }
+		   else{
+			   $('.BACK').css('top','959px');
+			   $("#input_change").css('top','959px');
+			   $('.save_info').css('top','959px');
+		   }
+		   $("#myCanvas1").toggle();
+		   $("#txt_Search").toggle();
+		   var text= ($("#input_change").text() == display_label[0])?display_label[1]:display_label[0];
+		   $("#input_change").text(text);
+		   var hint_text = ($("#inscription_hint").text() == inscription_hint[0]?inscription_hint[1]:inscription_hint[0]);
+		   $("#inscription_hint").text(hint_text);
+	   });
+    </script>
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

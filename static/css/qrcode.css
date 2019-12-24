@@ -1,0 +1,19 @@
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.photo-item {
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+}
+
+.tip {
+    font-size: 40px;
+    display: none;
+    text-align: right;
+}

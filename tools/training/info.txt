@@ -1,0 +1,4 @@
+﻿name=袁士义
+city=北京
+continent=亚洲
+address=中国工程院能源矿业工程学部

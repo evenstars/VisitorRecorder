@@ -1,0 +1,1 @@
+del /Q E:\fascom-recognition\static\snapping

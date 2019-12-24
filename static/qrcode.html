@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>历史照片</title>
+    <link rel="stylesheet" type="text/css" href="./css/qrcode.css">
+</head>
+<body>
+    <div id="container">
+        <!-- <div class="tip">
+            请点击右上角用浏览器打开下载 
+        </div> -->
+        <div class="photo-item" v-for="photo in photos">
+            <img class="photo" v-bind:src="photo" >
+        <div>
+    </div>
+    <script type="text/javascript" src="./js/jQuery-3.1.0.js"></script>
+    <script type="text/javascript" src='./js/util.js'></script>
+    <script type="text/javascript" src='./js/vue.js'></script>
+    <script type="text/javascript" src='./js/my_qrcode.js'></script>
+</body>
+</html>

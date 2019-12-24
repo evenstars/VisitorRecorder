@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #282e3a;
+	color: #f9f9f9;
+	font: 100%/1.5em "Droid Sans", sans-serif;
+	margin: 0;
+}
+
+p { margin: 0; }
+
+/* ---------- GENERAL-CLASSES ---------- */
+
+.container {
+	height: 248px;
+	left: 50%;
+	margin: -124px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
+}
+
+/* ---------- APP ---------- */
+
+.app-camera {
+	background: #09b79c;
+	border-radius: 35px;
+	-webkit-box-shadow: 0 8px 0 #15181f;
+	box-shadow: 0 8px 0 #15181f;
+	height: 200px;
+	margin-bottom: 24px;
+	position: relative;
+	width: 200px;
+}
+
+.app-title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 5px #15181f;
+}
+
+.flash {
+	background: #0b8d79;
+	/*border: 3px solid #f9f9f9;*/
+	border-radius: 50%;
+	height: 24px;
+	left: 20%;
+	margin: -12px 0 0 -12px;
+	position: absolute;
+	top: 15%;
+	width: 24px;
+}
+
+.camera {
+	background: #474f58;
+	border-top: 10px solid #f9f9f9;
+	border-bottom: 10px solid #f9f9f9;
+	height: 72px;
+	margin: -46px 0 0 0;
+	position: absolute;
+	top: 55%;
+	width: 100%;
+}
+
+.lense {
+	background: #282e3a;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 0 10px #474f58, 0 0 0 20px #f9f9f9;
+	height: 94px;
+	left: 50%;
+	margin: -47px 0 0 -47px;
+	position: absolute;
+	top: 55%;
+	width: 94px;
+}
+
+.reflection {
+	background: #707c89;
+	border-radius: 50%;
+	height: 28px;
+	left: 45%;
+	margin: -14px 0 0 -14px;
+	position: absolute;
+	top: 45%;
+	width: 28px;
+}
+
+.reflection-small {
+	background: #707c89;
+	border-radius: 50%;
+	height: 10px;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+	position: absolute;
+	top: 60%;
+	width: 10px;
+}
+
+
+.countdown {
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+  	background: rgba(0, 0, 0, 0.5);
+  	text-align: center;
+  	font-family: 'ds-dig';
+  	display: table-cell;
+  	vertical-align: middle;
+  	color: #41ccff;
+  	line-height: 285px;
+  	font-size: 112.5px;
+  	display: none;
+}

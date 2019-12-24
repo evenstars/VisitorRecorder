@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=2560,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta charset="utf-8">
+    <title>清华大学合肥公共安全研究院</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <app></app>
+    </div>
+    <script type="text/javascript" src="./static/js/vendors/require.js"></script>
+    <script type="text/javascript" src="./static/js/vendors/echarts.js"></script>
+    <script type="text/javascript" src="./static/js/vendors/echarts-x.js"></script>
+    <script type="text/javascript">
+        require.config({
+            paths: {
+                'echarts': 'static/js/vendors/echarts',
+                'echarts-x': 'static/js/vendors/echarts-x'
+            }
+        });
+
+        require([
+            'echarts',
+            'echarts-x',
+            'echarts/config',
+            'echarts/chart/map',
+            'echarts-x/chart/map3d',
+        ], function(echarts, ecx, ecconfig) {
+            echarts.config = ecconfig;
+            window.echarts = echarts;
+            require(['./static/js/app.js']);
+        });
+    </script>
+</body>
+</html>

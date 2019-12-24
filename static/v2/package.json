@@ -1,0 +1,43 @@
+{
+  "name": "fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node webpack.server.js",
+    "start":"webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bone": "^0.4.3",
+    "bone-act-autoprefixer": "^0.1.0",
+    "bone-act-buble": "0.0.1",
+    "bone-act-concat": "^0.3.3",
+    "bone-act-htmllayout": "^0.3.3",
+    "bone-act-include": "^0.2.2",
+    "bone-act-less": "^0.3.0",
+    "bone-act-reclude": "^0.4.2",
+    "bone-cli-build": "^0.4.0",
+    "bone-cli-connect": "^0.3.0",
+    "buble": "^0.14.2",
+    "buble-loader": "^0.3.2",
+    "css-loader": "^0.26.1",
+    "echarts": "^2.2.1-amd-beta1",
+    "echarts-x": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp.spritesmith": "^6.2.1",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "qtek": "^0.2.1-amd-beta2",
+    "text-loader": "0.0.1",
+    "vue": "^2.0.5",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.0.5",
+    "vuex": "^2.0.0",
+    "webpack":"1.13.3",
+    "webpack-dev-server":"1.16.2",
+    "zrender": "^2.0.2",
+    "zrenderjs": "^2.1.1"
+  }
+}
