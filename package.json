@@ -69,7 +69,7 @@
     "forever-agent": "^0.6.1",
     "form-data": "^2.1.2",
     "forwarded": "^0.1.0",
-    "fresh": "^0.3.0",
+    "fresh": "^0.5.2",
     "ftp": "^0.3.10",
     "generate-function": "^2.0.0",
     "generate-object-property": "^1.2.0",
